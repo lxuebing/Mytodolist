@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MyToDoList</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel='icon' href='img/Head portrait.jpg' sizes="16*16" type=‘image/x-ico’ />
+</head>
+<body>
+	<div class="wrap">
+
+		<h1>我的日程列表</h1>
+
+		<form class="add-task" onsubmit="return false">
+			<input type="text" name="inputText" class="content" autocomplete="off">
+			<button class="addTaskSubmit">提交</button>
+		</form>
+
+		<div class="task-list">
+
+		</div>
+
+
+		<!-- 详情弹出框 -->
+		<div class="task-detail">
+			<input type="text" class="detail-content">
+			<p>备注:</p>
+			<textarea class="desc"></textarea>
+			<p>设置闹钟:</p>
+			<input type="text" class="datetime">
+			<button class="detail-submit">提交</button>
+		</div>
+	</div>
+
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<!--datetimepicker-->
+		<script src="js/jquery.datetimepicker.full.js" type="text/javascript" charset="utf-8"></script>
+		<!--store.js-->
+		<script src="js/store.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
